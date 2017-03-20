@@ -1,22 +1,31 @@
 # Android_dev-
+--------------------------------------------
 Android app development &amp; other development 
 
 1) This first apk is for a Incrementor/decrement android app.
 
+--------------------------------------------
+
 2) Second anroid application is number shape app. 
     (let's user know if the number they inputted is a square or a triangle number)
     
+--------------------------------------------
+
 3) Connect 3 apk is a game like tick tac toe but instead you are connecting tokens.
     -A 2 player game that lets player 1(yellow token) and player 2(red token) 
     take turns and try to pair 3 tokens diagonally/horizontally/vertically 
     -Updated with sounds 03/20/2017 
     -token being placed sounds 
     -winner/draw sounds 
-    
+
+--------------------------------------------
+
 4) Audio-Slider apk 
  -Control the volume of the audio clip
   -Play/Pause the audio clip
   -Also rotating a image related, to the
   audio clip
+
+--------------------------------------------
     
 -Other apps will be uploaded in time.

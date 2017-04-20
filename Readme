@@ -29,8 +29,14 @@ Android app development &amp; other development
 --------------------------------------------
     
 5) BasicPhrases(1) apk
-- 8 phrases which will be played
+- This app takes 8 phrases and playes them
  in French. (Help learn French)
+ 
+ --------------------------------------------
+ 
+6) Eggtimerapk
+-Basic stopwatch timer app
+-Allows user to set it using the seekbar
  
  --------------------------------------------
 

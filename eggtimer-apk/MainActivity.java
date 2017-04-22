@@ -115,6 +115,17 @@ public class MainActivity extends AppCompatActivity {
                     MediaPlayer airhorn = MediaPlayer.create(getApplicationContext(), R.raw.airhorn);
                     airhorn.start();
                     Toast.makeText(getApplicationContext(), "Timer finished!", Toast.LENGTH_SHORT).show();
+                    
+                    
+                    //now reset it
+                    num_timer.setText("0:30");
+                    //set the seekbar to work and progress of 30 secs
+                    bar_timer.setProgress(30);
+                    //set to editable
+                    bar_timer.setEnabled(true);
+                    countDownTimer.cancel();
+                    start_button.setText("Go");
+                    active_counter = false;
 
 
                 }

@@ -2,6 +2,8 @@ package com.pj92singh.eggtimer;
 /* pj92singh
 *  Prabhjit Singh
 *  eggtimer app
+* UPDATED 04/21/2017 
+* -> to reset after timer is finised 
 *
 */
 import android.media.MediaPlayer;

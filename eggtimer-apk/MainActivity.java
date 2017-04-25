@@ -2,8 +2,6 @@ package com.pj92singh.eggtimer;
 /* pj92singh
 *  Prabhjit Singh
 *  eggtimer app
-* UPDATED 04/21/2017 
-* -> to reset after timer is finised 
 *
 */
 import android.media.MediaPlayer;
@@ -117,8 +115,7 @@ public class MainActivity extends AppCompatActivity {
                     MediaPlayer airhorn = MediaPlayer.create(getApplicationContext(), R.raw.airhorn);
                     airhorn.start();
                     Toast.makeText(getApplicationContext(), "Timer finished!", Toast.LENGTH_SHORT).show();
-                    
-                    
+
                     //now reset it
                     num_timer.setText("0:30");
                     //set the seekbar to work and progress of 30 secs

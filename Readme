@@ -6,8 +6,10 @@ Android app development &amp; other development
 
 --------------------------------------------
 
-2) Second anroid application is number shape app. 
-    (let's user know if the number they inputted is a square or a triangle number)
+2) (Apk2) Second Android application is number shape app. 
+    -let's user input a number
+    -run's algorithim to see if the nubmer is square/triangular or both
+    -sends a toast notification with answer
     
 --------------------------------------------
 
@@ -25,12 +27,13 @@ Android app development &amp; other development
   -Play/Pause the audio clip
   -Also rotating a image related, to the
   audio clip
+  -Basically an app to test some anitmations/media playback 
 
 --------------------------------------------
     
 5) BasicPhrases(1) apk
 - This app takes 8 phrases and playes them
- in French. (Help learn French)
+ in French. (Help's learn French)
  
  --------------------------------------------
  

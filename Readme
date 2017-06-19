@@ -54,5 +54,12 @@ in 30 seconds.
 -Allows user to set it using the seekbar
  
  --------------------------------------------
+ 
+ 8) JSON demo
+-This app doesn't have an interface just deals with 
+disecting JSON data and processing it through.
+-Then finally sending it to the logs
+
+ --------------------------------------------
 
 -Other apps will be uploaded in time.

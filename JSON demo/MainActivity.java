@@ -135,6 +135,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         DonwloadTask task = new DonwloadTask();
-        task.execute("http://api.openweathermap.org/data/2.5/weatherq=London,uk&appid=f25403a97eeec28faff6766f97076a6a");
+        task.execute("http://api.openweathermap.org/data/2.5/weather?q=London&APPID=695ddcf3e06c4a679bca9e042d184142");
     }
 }

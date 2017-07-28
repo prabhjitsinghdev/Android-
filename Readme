@@ -64,7 +64,8 @@ disecting JSON data and processing it through.
  
  9) WeatherApp
 -Uses previous concept of extracting JSON data from external API's 
--And gives the user up-to-date weather information for the city they input
+-And gives the user up-to-date weather information,
+ for the city they input(If city is available then)
 -Requires that the device has a Wifi connection 
 -Screenshots also available 
 

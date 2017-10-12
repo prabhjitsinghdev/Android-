@@ -4,7 +4,11 @@ Please feel free to download and test the unsigned apks' on your Android device.
 I have also provided the main-actvity code (java files) and also the layout code in the responding apps (XML files).
 Some apps will a few screenshots to show you what the app looks like if you cannot run the app on your Android Device.
 
-**Some Apps require that your device is on Android Nougat 7.1**
+**Some Apps require that your device is on Android Nougat 7.1** 
+-with use of app premissions 
+-& better GPS/battery optmizations 
+
+**AT Bare minimum some apps are comptiable to run on Android Version 5.0 Lolipop**
 
 --------------------------------------------
 Android app development &amp; other development 
@@ -77,12 +81,20 @@ disecting JSON data and processing it through.
  --------------------------------------------
  
  10)  Hiker's Companion app
-  -shows the use of location manger
-  -and provids the user with all the
+  -shows the use of location manager
+  -and provides the user with all the
   related data for hiking 
-  i.e. Location/Longitutde/Latitidue 
+  i.e. Location/Longitutde/Latitidue
   Altitude/Address etc. 
   
+--------------------------------------------
+
+11) Together App 10/12/2017
+-combines most aspects of previous apps
+-GPS location manager use
+-obtaining premissions'
+-sound use etc.
+
 --------------------------------------------
 
 -Other apps will be uploaded in time.

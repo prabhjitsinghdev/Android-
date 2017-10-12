@@ -91,9 +91,11 @@ disecting JSON data and processing it through.
 
 11) Together App 10/12/2017
 -combines most aspects of previous apps
--GPS location manager use
--obtaining premissions'
--sound use etc.
+-GPS info using location manager/provider etc.
+-using Android 6.0 (MM) & higher API for pop-up premisson dialog
+-sound for settings etc.
+-allowing user to re-assign access to location 
+services if they deny it in the first place
 
 --------------------------------------------
 

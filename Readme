@@ -1,10 +1,11 @@
 # Android_dev-
 
 Please feel free to download and test the unsigned apks' on your Android device.
-I have also provided the main-actvity code (java files) and also the layout code in the responding apps (XML files).
+I have also provided the main-actvity code (java files) and also the layout code in the responding apps (XML files),
+Android Manifest files and others like menu XML files.
 Some apps will a few screenshots to show you what the app looks like if you cannot run the app on your Android Device.
 
-**Some Apps require that your device is on Android Nougat 7.1** 
+**Some Apps require that your device is on Android Marshmallow(MM) 6.0 or Nougat 7.1** 
 -with use of app premissions 
 -& better GPS/battery optmizations 
 

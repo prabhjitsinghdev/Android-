@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+    pj92singh
+    Notes app my Menu XML
+    -use to make custom modifications for the ActionBar
+    -in this case added a "add" button
+    so the user can start a new note
+    -->
+
+    <item android:id="@+id/add"
+          android:title="Add"
+          app:showAsAction="always"
+          android:icon="@android:drawable/btn_plus"/>
+
+
+</menu>

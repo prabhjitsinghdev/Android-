@@ -117,4 +117,13 @@ Screenshots uploaded to show the app in action
 
 --------------------------------------------
 
+13) Database demo
+-Runs a SQLite databse of Users 
+-manipulates it in various ways
+-then prints it to the logs
+-An small example for the use of
+SQL queries in an android app
+
+--------------------------------------------
+
 -Other apps will be uploaded in time.

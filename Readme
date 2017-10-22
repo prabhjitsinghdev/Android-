@@ -12,8 +12,8 @@ Some apps will a few screenshots to show you what the app looks like if you cann
 
 **AT Bare minimum some apps are comptiable to run on Android Version 5.0 Lolipop**
 
---------------------------------------------
-Android app development &amp; other development 
+----------------------------------------------------------------------------------------
+Android app development 
 
 1) This first apk is for a Incrementor/decrement android app.
  The files are outside any folder the unsinged apks
@@ -118,6 +118,7 @@ Screenshots uploaded to show the app in action
 --------------------------------------------
 
 13) Database demo
+-App runs on Lollipop or higher devices
 -Runs a SQLite databse of Users 
 -manipulates it in various ways
 -then prints it to the logs
@@ -125,5 +126,16 @@ Screenshots uploaded to show the app in action
 SQL queries in an android app
 
 --------------------------------------------
+
+14)WebView Demo
+-App runs on Lollipop or higher devices 
+-App requires internet access to work
+-This app is a demo for the use of WebViews
+and runs my Projects' webpage
+-apk uploaded can be used to see
+app in action!
+
+--------------------------------------------
+
 
 -Other apps will be uploaded in time.

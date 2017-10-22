@@ -2,17 +2,19 @@
 pj92singh 
 
 Please feel free to download and test the unsigned apks' on your Android device.
-I have also provided the main-actvity code (java files) and also the layout code in the responding apps (XML files),
-Android Manifest files and others like menu XML files.
-Some apps will a few screenshots to show you what the app looks like if you cannot run the app on your Android Device.
+I have also provided the main-actvity code (java files) and also the layout code
+in the responding apps (XML files), Android Manifest files and others
+suhc as menu XML files etc.
+If you cannot run the app on your Android Device, some apps will a few screenshots
+to show you what the app looks likein action.
 
-**Some Apps require that your device is on Android Marshmallow(MM) 6.0 or Nougat 7.1** 
+**Some Apps require that your device is on Android Marshmallow(MM) 6.0 or Nougat 7.1 to run** 
 -with use of app premissions 
 -& better GPS/battery optmizations 
 
 **AT Bare minimum some apps are comptiable to run on Android Version 5.0 Lolipop**
 
-----------------------------------------------------------------------------------------
+--------------------------------------------
 Android app development 
 
 1) This first apk is for a Incrementor/decrement android app.

@@ -18,7 +18,8 @@ to show you what the app looks likein action.
 Android app development 
 
 1) This first apk is for a Incrementor/decrement android app.
- The files are outside any folder the unsinged apks
+ -The files are outside any folder the unsinged apks
+ -Runs on JellyBean or higher
 
 --------------------------------------------
 
@@ -26,6 +27,7 @@ Android app development
     -let's user input a number
     -run's algorithim to see if the nubmer is square/triangular or both
     -sends a toast notification with answer
+    -Runs on Lollipop or higher
     
 --------------------------------------------
 
@@ -35,6 +37,7 @@ Android app development
     -Updated with sounds 03/20/2017 
     -token being placed sounds 
     -winner/draw sounds 
+    -Runs on Lolipop or higher
 
 --------------------------------------------
 
@@ -62,15 +65,18 @@ in 30 seconds.
  --------------------------------------------
  
 7) Eggtimerapk
--Basic stopwatch timer app
+-Stopwatch timer app
 -Allows user to set it using the seekbar
- 
+-Rings when timer goes off
+
  --------------------------------------------
  
  8) JSON demo
 -This app doesn't have an interface just deals with 
 disecting JSON data and processing it through.
 -Then finally sending it to the logs
+-Best way to see what the app does is run through 
+Android Studio
 
  --------------------------------------------
  

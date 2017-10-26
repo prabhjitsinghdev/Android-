@@ -135,7 +135,7 @@ SQL queries in an android app
 
 --------------------------------------------
 
-14)WebView Demo
+14) WebView Demo
 -App runs on Lollipop or higher devices 
 -App requires internet access to work
 -This app is a demo for the use of WebViews
@@ -143,6 +143,17 @@ and runs my Projects' webpage
 -apk uploaded can be used to see
 app in action!
 
+--------------------------------------------
+
+15) HackerNews App 
+-Displays top 15 articles from their website
+using their api to fetch/obtain JSON data
+-manipulate the data to get the article ID's
+titles and URL
+-Then available to read using Webview 
+-Screenshots available if you cannot install 
+the apk 
+ 
 --------------------------------------------
 
 

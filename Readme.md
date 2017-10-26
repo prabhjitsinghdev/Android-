@@ -151,6 +151,8 @@ using their api to fetch/obtain JSON data
 -manipulate the data to get the article ID's
 titles and URL
 -Then available to read using Webview 
+-Apk uploaded to run on your android device
+-Requires Android 6.0 MM or higher to use
 -Screenshots available if you cannot install 
 the apk 
  

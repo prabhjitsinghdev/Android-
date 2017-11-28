@@ -158,5 +158,11 @@ the apk
  
 --------------------------------------------
 
+16) Scrolling Activity 
+-test of full text scrolling 
+-text pulled from Strings.xml file
+-was made part of another app that will be uploaded 
+
+--------------------------------------------
 
 -Other apps will be uploaded in time.

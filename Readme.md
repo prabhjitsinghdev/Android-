@@ -165,4 +165,14 @@ the apk
 
 --------------------------------------------
 
+17) Notification Test
+-This app is test of Notification Manager
+ and Android 8.0 standards of NOTFICATION CHANNELS
+ via a notifcation popup at press of a button with 
+ certain ID 
+-Once notfication is clicked, then it will
+ direct user to Projects website
+
+--------------------------------------------
+
 -Other apps will be uploaded in time.

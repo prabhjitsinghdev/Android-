@@ -15,15 +15,15 @@ to show you what the app looks likein action.
 **AT Bare minimum some apps are comptiable to run on Android Version 5.0 Lolipop**
 
 --------------------------------------------
-Android app development 
+Apps 
 
-1) This first apk is for a Incrementor/decrement android app.
+1) My First android app; Incrementor/decrement android app.
  -The files are outside any folder the unsinged apks
  -Runs on JellyBean or higher
 
 --------------------------------------------
 
-2) (Apk2) Second Android application is number shape app. 
+2) **Number Shape App(Apk2)** Second Android application is. 
     -let's user input a number
     -run's algorithim to see if the nubmer is square/triangular or both
     -sends a toast notification with answer
@@ -31,7 +31,8 @@ Android app development
     
 --------------------------------------------
 
-3) Connect 3 apk is a game like tick tac toe but instead you are connecting tokens.
+3) **Connect 3 apk**
+     is a game like tick tac toe but instead you are connecting tokens.
     -A 2 player game that lets player 1(yellow token) and player 2(red token) 
     take turns and try to pair 3 tokens diagonally/horizontally/vertically 
     -Updated with sounds 03/20/2017 
@@ -41,7 +42,7 @@ Android app development
 
 --------------------------------------------
 
-4) Audio-Slider apk 
+4) **Audio-Slider apk** 
  -Control the volume of the audio clip
   -Play/Pause the audio clip
   -Also rotating a image related, to the
@@ -50,37 +51,37 @@ Android app development
 
 --------------------------------------------
     
-5) BasicPhrases(1) apk
+5) **BasicPhrases(1) apk**
 - This app takes 8 phrases and playes them
  in French. (Help's learn French)
  
  --------------------------------------------
 
-6) BrainTrainer(1) apk
+6) **BrainTrainer(1) apk**
 - This app lets user play an addition game
 - The user adds 2 numbers as quickly as possible
 in 30 seconds. 
 -The questions are randomly generated 
- 
+ **Test of mainly object/image manipulation** 
  --------------------------------------------
  
-7) Eggtimerapk
+7) **Eggtimerapk**
 -Stopwatch timer app
 -Allows user to set it using the seekbar
 -Rings when timer goes off
 
  --------------------------------------------
  
- 8) JSON demo
+ 8) **JSON demo**
 -This app doesn't have an interface just deals with 
 disecting JSON data and processing it through.
 -Then finally sending it to the logs
 -Best way to see what the app does is run through 
-Android Studio
+Android Studio and look through the logs
 
  --------------------------------------------
  
- 9) WeatherApp
+ 9) **WeatherApp**
 -Uses previous concept of extracting JSON data from external API's (openweathermap's API)
 -And gives the user up-to-date weather information,
  for the city they input(If city is available then)
@@ -90,7 +91,7 @@ Android Studio
 
  --------------------------------------------
  
- 10)  Hiker's Companion app
+ 10)  **Hiker's Companion app**
   -shows the use of location manager
   -and provides the user with all the
   related data for hiking 
@@ -99,7 +100,7 @@ Android Studio
   
 --------------------------------------------
 
-11) Together App 10/12/2017
+11) **Together App** 10/12/2017
 -combines most aspects of previous apps
 -GPS info using location manager/provider etc.
 -using Android 6.0 (MM) & higher API 23 or higher
@@ -112,7 +113,7 @@ Android Studio
 
 --------------------------------------------
 
-12) Notes App 
+12) **Notes App** 
 *RUNS ON LOLLIPOP OR HIGHER 
 *the app is locked to portrait mode
 *appCompact theme is set to DAyNight
@@ -125,7 +126,7 @@ Screenshots uploaded to show the app in action
 
 --------------------------------------------
 
-13) Database demo
+13) **Database demo**
 -App runs on Lollipop or higher devices
 -Runs a SQLite databse of Users 
 -manipulates it in various ways
@@ -135,7 +136,7 @@ SQL queries in an android app
 
 --------------------------------------------
 
-14) WebView Demo
+14) **WebView Demo**
 -App runs on Lollipop or higher devices 
 -App requires internet access to work
 -This app is a demo for the use of WebViews
@@ -145,7 +146,7 @@ app in action!
 
 --------------------------------------------
 
-15) HackerNews App 
+15) **HackerNews App** 
 -Displays top 15 articles from their website
 using their api to fetch/obtain JSON data
 -manipulate the data to get the article ID's
@@ -158,14 +159,14 @@ the apk
  
 --------------------------------------------
 
-16) Scrolling Activity 
+16) **Scrolling Activity** 
 -test of full text scrolling 
 -text pulled from Strings.xml file
 -was made part of another app that will be uploaded 
 
 --------------------------------------------
 
-17) Notification Test
+17) **Notification Test**
 -This app is test of Notification Manager
  and Android 8.0 standards of NOTFICATION CHANNELS
  via a notifcation popup at press of a button with 

@@ -177,4 +177,11 @@ the apk
 
 --------------------------------------------
 
+18) **Theme Test**
+-Android app built to show theem swithcing for the app
+(light and dark themes) 
+-Settings activity to allow the user to change themes
+
+--------------------------------------------
+
 -Other apps will be uploaded in time.

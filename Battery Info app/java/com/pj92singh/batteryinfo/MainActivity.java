@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             Log.i("DEBUG", "battery health2: " + health2);
             //extra temp is string so convert it
             int currentTemp = Integer.parseInt(BatteryManager.EXTRA_TEMPERATURE);
-
+            Log.i("DEBUG", "current temp: " +currentTemp);
             String message = "Current temp: " +currentTemp + Character.toString(((char) 176))+ "C";
             Log.i("DEBUG", "current temp: " +message);
 
@@ -42,23 +42,24 @@ public class MainActivity extends AppCompatActivity {
             int batteryUSB = BatteryManager.BATTERY_PLUGGED_USB;
             Log.i("DEBUG", "Battery USB: " +batteryUSB);
             //the battery percentage
-            String batteryLevel = BatteryManager.EXTRA_LEVEL;
-            Log.i("DEBUG", "batteryLevel: " +batteryLevel);
+            String batteryLevelS = BatteryManager.EXTRA_LEVEL;
+            Log.i("DEBUG", "batteryLevel: " +batteryLevelS);
+            int batteryLevel = Integer.parseInt(batteryLevelS);
 
+            //if the temp drops
+            if((currentTemp <= 18) && (charging10 == true || charging10 == false)){
+                //run the processor
+                //check also for  30 < battery < 100
+                if((batteryLevel > 30) || (batteryLevel < 100){
+                    // Toast.makeText(getApplicationContext)
+
+                }
+            }
         }catch (Exception e){
             Log.i("ERROR", "excepetion error: " +e);
         }
 
 
-        //if the temp drops
-        if(currentTemp <= 18) && (charging10 == true || charging10 == false){
-            //run the processor
-            //check also for  30 < battery < 100
-            if((batteryLevel > 30) || (batteryLevel < 100){
-                // Toast.makeText(getApplicationContext)
-
-            }
-        }
 
 
     }

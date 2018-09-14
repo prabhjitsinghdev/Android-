@@ -20,45 +20,45 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    try {
-        BatteryManager batteryManager = new BatteryManager(BATTERY_SERVICE);
-        int health = BatteryManager.BATTERY_HEALTH_UNKNOWN;
-        Log.i("DEBUG", "battery health: " + health);
-        int health2 = batteryManager.getIntProperty(BatteryManager.BATTERY_HEALTH_OVERHEAT);
-        Log.i("DEBUG", "battery health2: " + health2);
-        int currentTemp = (BatteryManager.EXTRA_TEMPERATURE);
+        try {
+            BatteryManager batteryManager = new BatteryManager(BATTERY_SERVICE);
+            int health = BatteryManager.BATTERY_HEALTH_UNKNOWN;
+            Log.i("DEBUG", "battery health: " + health);
+            int health2 = batteryManager.getIntProperty(BatteryManager.BATTERY_HEALTH_OVERHEAT);
+            Log.i("DEBUG", "battery health2: " + health2);
+            //extra temp is string so convert it
+            int currentTemp = Integer.parseInt(BatteryManager.EXTRA_TEMPERATURE);
 
-        String message = "Current temp: " +currentTemp + Character.toString(((char) 176))+ "C";
-        Log.i("DEBUG", "current temp: " +message);
+            String message = "Current temp: " +currentTemp + Character.toString(((char) 176))+ "C";
+            Log.i("DEBUG", "current temp: " +message);
 
-        //check if its charging as well
-       boolean charging10 = BatteryManager.isCharging();
-       Log.i("DEBUG", "Charging value: " +charging10);
-       //check if plugged to AC
-        int batteryAC = BatteryManager.BATTERY_PLUGGED_AC;
-        Log.i("DEBUG", "Battery AC: " +batteryAC);
-         //check if USB
-        int batteryUSB = BatteryManager.BATTERY_PLUGGED_USB;
-        Log.i("DEBUG", "Battery USB: " +batteryUSB);
-        //the battery percentage
-        String batteryLevel = BatteryManager.EXTRA_LEVEL;
-        Log.i("DEBUG", "batteryLevel: " +batteryLevel);
+            //check if its charging as well
+            boolean charging10 = BatteryManager.isCharging();
+            Log.i("DEBUG", "Charging value: " +charging10);
+            //check if plugged to AC
+            int batteryAC = BatteryManager.BATTERY_PLUGGED_AC;
+            Log.i("DEBUG", "Battery AC: " +batteryAC);
+            //check if USB
+            int batteryUSB = BatteryManager.BATTERY_PLUGGED_USB;
+            Log.i("DEBUG", "Battery USB: " +batteryUSB);
+            //the battery percentage
+            String batteryLevel = BatteryManager.EXTRA_LEVEL;
+            Log.i("DEBUG", "batteryLevel: " +batteryLevel);
 
-    }catch (Exception e){
-        Log.i("ERROR", "excepetion error: " +e);
-    }
+        }catch (Exception e){
+            Log.i("ERROR", "excepetion error: " +e);
+        }
 
 
-    //if the temp drops 
-    if(currentTemp <= 18) && (charging10 == true || charging10 == false){
-        //run the processor
-         //check also for  30 < battery < 100 
-         if((batteryLevel > 30) || (batteryLevel < 100){
-            // Toast.makeText(getApplicationContext)
-            
-         }
-    }
+        //if the temp drops
+        if(currentTemp <= 18) && (charging10 == true || charging10 == false){
+            //run the processor
+            //check also for  30 < battery < 100
+            if((batteryLevel > 30) || (batteryLevel < 100){
+                // Toast.makeText(getApplicationContext)
 
+            }
+        }
 
 
     }

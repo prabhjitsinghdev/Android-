@@ -184,4 +184,11 @@ the apk
 
 --------------------------------------------
 
+
+19) **BT Test**
+-Android app testing bluetooth connectivity and pairing
+-Well get updated to stream media (audio, then following other media types)
+
+--------------------------------------------
+
 -Other apps will be uploaded in time.

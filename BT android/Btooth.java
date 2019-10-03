@@ -37,6 +37,8 @@ import android.Manifest;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothHeadset;
+import android.bluetooth.BluetoothProfile;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -53,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
     private static int GET_BLUETOOTH_ON = 100;
     private boolean per_Granted = false;
     public  static int REQUEST_ENABLE_BT = 1;
+    BluetoothHeadset bluetoothHeadset;
+    BluetoothAdapter bluetoothAdapter;
+    BluetoothProfile.ServiceListener profileListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     * then proceed to stream data/media
     * */
     public void PairDevices(){
-        BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        bluetoothAdapter.getDefaultAdapter();
 
         if (!bluetoothAdapter.isEnabled())
         {
@@ -116,10 +121,36 @@ public class MainActivity extends AppCompatActivity {
                             String deviceName = device.getName();
                             String deviceHardwareAddress = device.getAddress(); // MAC address
                             Log.i("DEBUG BT", "BT list: " + deviceName + " hardwareAddress: " + deviceHardwareAddress);
+                            //we have a paried device
+                            //lets connect
+                            profileListener = new BluetoothProfile.ServiceListener(){
+                                @Override
+                                public void onServiceConnected(int profile, BluetoothProfile proxy) {
+                                    //connected
+                                    //use global bluetoothHeadset
+                                    if (profile == BluetoothProfile.HEADSET) {
+                                        bluetoothHeadset = (BluetoothHeadset) proxy;
+                                        // Establish connection to the proxy.
+                                        bluetoothAdapter.getProfileProxy(getApplicationContext(), profileListener, BluetoothProfile.HEADSET);
+
+
+                                    }
+                                }
+
+                                @Override
+                                public void onServiceDisconnected(int profile) {
+                                    if (profile == BluetoothProfile.HEADSET) {
+                                        bluetoothHeadset = null;
+                                        // Close proxy connection after use.
+                                       // bluetoothAdapter.closeProfileProxy(bluetoothHeadset);
+                                    }
+                                }
+                            };
                         }
                     }else if (pairedDevices.size() < 0){
                         //no devices, need to discover
                         //scan for devices
+                        bluetoothAdapter.startDiscovery();
                     }
                 }
         }

@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         /*
         * first get the permission for bluetooth
+        * ** if nothing was found, then start discovery
+        * ** else
+        * ** check which type of device it is and then next part is use of media
         * */
     }
 
@@ -132,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                                         bluetoothHeadset = (BluetoothHeadset) proxy;
                                         // Establish connection to the proxy.
                                         bluetoothAdapter.getProfileProxy(getApplicationContext(), profileListener, BluetoothProfile.HEADSET);
-
+                                        //TODO check here for media and connection
 
                                     }
                                 }

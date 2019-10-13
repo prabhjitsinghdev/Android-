@@ -39,6 +39,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothHeadset;
 import android.bluetooth.BluetoothProfile;
+import android.bluetooth.BluetoothServerSocket;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -52,6 +53,7 @@ import java.util.Set;
 * Prabhjit Singh
 * Bluetooth test */
 public class MainActivity extends AppCompatActivity {
+    /* GLOBAL variables for bluetooth class members*/
     private static int GET_BLUETOOTH_ON = 100;
     private boolean per_Granted = false;
     public  static int REQUEST_ENABLE_BT = 1;
@@ -134,7 +136,16 @@ public class MainActivity extends AppCompatActivity {
                                             bluetoothAdapter.getProfileProxy(getApplicationContext(), profileListener, BluetoothProfile.HEADSET);
                                             //TODO check here for media and connection
                                             //check the connection health
-                                            bluetoothAdapter.getProfileConnectionState();
+                                            /*
+                                            *In order to create a connection between two devices,
+                                            * you must implement both the server-side and client-side
+                                            * mechanisms because one device must open a server socket,
+                                            * the other one must initiate the connection using the
+                                            * server device's MAC address.
+                                            * The server device and the client device each obtain the
+                                            * required BluetoothSocket in different ways.
+                                             */
+                                            BluetoothServerSocket BtSocket =  new BluetoothServerSocket();
 
                                         } catch (Exception e) {
                                             Log.i("DEBUG catch SC", "ServiceConnected getProflie Connection error: " + e);

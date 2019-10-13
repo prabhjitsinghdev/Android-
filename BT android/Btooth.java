@@ -50,7 +50,7 @@ import java.util.Set;
 
 /*pj92singh
 * Prabhjit Singh
-* Blueetooth test */
+* Bluetooth test */
 public class MainActivity extends AppCompatActivity {
     private static int GET_BLUETOOTH_ON = 100;
     private boolean per_Granted = false;
@@ -99,43 +99,46 @@ public class MainActivity extends AppCompatActivity {
     * */
     public void PairDevices(){
         bluetoothAdapter.getDefaultAdapter();
+        try {
+            if (!bluetoothAdapter.isEnabled()) {
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
 
-        if (!bluetoothAdapter.isEnabled())
-        {
-            Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
-
-                if (bluetoothAdapter == null)
-                {
+                if (bluetoothAdapter == null) {
                     // Device doesn't support Bluetooth
                     Log.i("DEBUG", "bluetooth not connected/device not supported");
                     Toast.makeText(getApplicationContext(), "device not supported", Toast.LENGTH_LONG);
 
-                } else{
+                } else {
                     //bluetooth is enabled on device
                     //find paried devices
                     Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
 
-                    if (pairedDevices.size() > 0)
-                    {
+                    if (pairedDevices.size() > 0) {
                         // There are paired devices. Get the name and address of each paired device.
-                        for (BluetoothDevice device : pairedDevices)
-                        {
+                        for (BluetoothDevice device : pairedDevices) {
                             String deviceName = device.getName();
                             String deviceHardwareAddress = device.getAddress(); // MAC address
                             Log.i("DEBUG BT", "BT list: " + deviceName + " hardwareAddress: " + deviceHardwareAddress);
                             //we have a paried device
                             //lets connect
-                            profileListener = new BluetoothProfile.ServiceListener(){
+                            profileListener = new BluetoothProfile.ServiceListener() {
                                 @Override
                                 public void onServiceConnected(int profile, BluetoothProfile proxy) {
                                     //connected
                                     //use global bluetoothHeadset
                                     if (profile == BluetoothProfile.HEADSET) {
                                         bluetoothHeadset = (BluetoothHeadset) proxy;
-                                        // Establish connection to the proxy.
-                                        bluetoothAdapter.getProfileProxy(getApplicationContext(), profileListener, BluetoothProfile.HEADSET);
-                                        //TODO check here for media and connection
+                                        try {
+                                            // Establish connection to the proxy.
+                                            bluetoothAdapter.getProfileProxy(getApplicationContext(), profileListener, BluetoothProfile.HEADSET);
+                                            //TODO check here for media and connection
+                                            //check the connection health
+                                            bluetoothAdapter.getProfileConnectionState();
+
+                                        } catch (Exception e) {
+                                            Log.i("DEBUG catch SC", "ServiceConnected getProflie Connection error: " + e);
+                                        }
 
                                     }
                                 }
@@ -145,17 +148,23 @@ public class MainActivity extends AppCompatActivity {
                                     if (profile == BluetoothProfile.HEADSET) {
                                         bluetoothHeadset = null;
                                         // Close proxy connection after use.
-                                       // bluetoothAdapter.closeProfileProxy(bluetoothHeadset);
+                                        // bluetoothAdapter.closeProfileProxy(bluetoothHeadset);
                                     }
                                 }
                             };
                         }
-                    }else if (pairedDevices.size() < 0){
+                    } else if (pairedDevices.size() < 0) {
                         //no devices, need to discover
                         //scan for devices
                         bluetoothAdapter.startDiscovery();
                     }
                 }
+            }else if(bluetoothAdapter.isEnabled() == false){
+                //please turn on bluetooth
+                Log.i("DEBUG", "turn on bluetooth");
+            }
+        }catch(Exception e){
+            Log.i("DEBUG catch PD", "Pair Devices error: " +e);
         }
 
     }

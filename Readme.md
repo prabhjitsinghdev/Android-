@@ -4,15 +4,15 @@ pj92singh
 Please feel free to download and test the unsigned apks' on your Android device.
 I have also provided the main-actvity code (java files) and also the layout code
 in the responding apps (XML files), Android Manifest files and others
-suhc as menu XML files etc.
+related files as menu XML files etc and sources for the apps.
 If you cannot run the app on your Android Device, some apps will a few screenshots
-to show you what the app looks likein action.
+to show you what the app looks like in action.
 
 **Some Apps require that your device is on Android Marshmallow(MM) 6.0 or Nougat 7.1 to run** 
 -with use of app premissions 
 -& better GPS/battery optmizations 
 
-**AT Bare minimum some apps are comptiable to run on Android Version 5.0 Lolipop**
+**AT BARE MINIMUM some apps are comptiable to run on Android Version 5.0 Lolipop**
 
 --------------------------------------------
 Apps 
@@ -187,6 +187,7 @@ the apk
 
 19) **BT Test**
 -Android app testing bluetooth connectivity and pairing
+-Requires bluetooth and file sharing access
 -Well get updated to stream media (audio, then following other media types)
 
 --------------------------------------------
